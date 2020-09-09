@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="ram_1port_0"
+ megafunction_name="RAM_1PORT"
+ intended_family="Stratix 10"
+ specifies="all_ports">
+ <global>
+  <pin name="data[287..0]" direction="input" scope="external" />
+  <pin name="q[287..0]" direction="output" scope="external" />
+  <pin name="address[3..0]" direction="input" scope="external" />
+  <pin name="wren" direction="input" scope="external" />
+  <pin name="clock" direction="input" scope="external" />
+ </global>
+</pinplan>

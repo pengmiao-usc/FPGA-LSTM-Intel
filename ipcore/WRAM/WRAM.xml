@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.09.07.22:07:52"
+ outputDirectory="/home/pengmiao/Quartus/Prefetcher2/ipcore/WRAM/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Stratix 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="1SX280LU3F50I3XGAS"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data" direction="input" role="datain" width="288" />
+  </interface>
+  <interface name="q" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="q" direction="output" role="dataout" width="288" />
+  </interface>
+  <interface name="address" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="address" direction="input" role="address" width="4" />
+  </interface>
+  <interface name="wren" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="wren" direction="input" role="wren" width="1" />
+  </interface>
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clock" direction="input" role="clk" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="WRAM" version="1.0" name="WRAM">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="1SX280LU3F50I3XGAS" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="3" />
+  <generatedFiles>
+   <file
+       path="/home/pengmiao/Quartus/Prefetcher2/ipcore/WRAM/synth/WRAM.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/pengmiao/Quartus/Prefetcher2/ipcore/WRAM/synth/WRAM.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="/home/pengmiao/Quartus/Prefetcher2/ipcore/WRAM.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/tools/intel/ip/altera/megafunctions/ram_1port/ram_1_port_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="WRAM">"Generating: WRAM"</message>
+   <message level="Info" culprit="WRAM">"Generating: WRAM_ram_1port_2010_wx3dkoi"</message>
+  </messages>
+ </entity>
+ <entity kind="ram_1port" version="20.1.0" name="WRAM_ram_1port_2010_wx3dkoi">
+  <parameter name="GUI_CLOCK_ENABLE_INPUT_A" value="false" />
+  <parameter name="GUI_AclrData" value="false" />
+  <parameter name="GUI_NUMWORDS_A" value="16" />
+  <parameter name="DEVICE_FAMILY" value="Stratix 10" />
+  <parameter name="GUI_RAM_BLOCK_TYPE" value="Auto" />
+  <parameter name="GUI_SingleClock" value="0" />
+  <parameter name="GUI_AclrAddr" value="false" />
+  <parameter name="GUI_INIT_FILE_LAYOUT" value="PORT_A" />
+  <parameter name="GUI_IMPLEMENT_IN_LES" value="0" />
+  <parameter name="GUI_X_MASK" value="false" />
+  <parameter name="GUI_MAXIMUM_DEPTH" value="0" />
+  <parameter name="GUI_RegOutput" value="true" />
+  <parameter name="GUI_READ_DURING_WRITE_MODE_PORT_A" value="0" />
+  <parameter name="GUI_CLOCK_ENABLE_OUTPUT_A" value="false" />
+  <parameter name="GUI_BYTE_SIZE" value="8" />
+  <parameter name="GUI_RESOURCE_USAGE" value="1 M20K" />
+  <parameter name="GUI_rden" value="false" />
+  <parameter name="GUI_JTAG_ID" value="NONE" />
+  <parameter name="GUI_WIDTH_A" value="288" />
+  <parameter name="GUI_RegData" value="true" />
+  <parameter name="GUI_FORCE_TO_ZERO" value="false" />
+  <parameter name="GUI_PR" value="false" />
+  <parameter name="GUI_MIFfilename" value="" />
+  <parameter name="GUI_OPTIMIZATION_OPTION" value="0" />
+  <parameter name="GUI_Clken" value="false" />
+  <parameter name="GUI_AclrByte" value="false" />
+  <parameter name="GUI_RegAddr" value="true" />
+  <parameter name="GUI_JTAG_ENABLED" value="false" />
+  <parameter name="GUI_INIT_TO_SIM_X" value="true" />
+  <parameter name="GUI_BYTE_WIDTH" value="36" />
+  <parameter name="GUI_WRCONTROL_ACLR_A" value="false" />
+  <parameter name="GUI_AclrOutput" value="false" />
+  <parameter name="GUI_WIDTHAD_A" value="4" />
+  <parameter name="GUI_ADDRESSSTALL_A" value="false" />
+  <parameter name="GUI_FILE_REFERENCE" value="0" />
+  <parameter name="GUI_BYTE_ENABLE" value="false" />
+  <parameter name="GUI_TBENCH" value="false" />
+  <parameter name="GUI_SclrOutput" value="false" />
+  <parameter name="GUI_MODULE_NAME" value="altera_syncram" />
+  <parameter name="GUI_BlankMemory" value="0" />
+  <generatedFiles>
+   <file
+       path="/home/pengmiao/Quartus/Prefetcher2/ipcore/WRAM/ram_1port_2010/synth/WRAM_ram_1port_2010_wx3dkoi.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/pengmiao/Quartus/Prefetcher2/ipcore/WRAM/ram_1port_2010/synth/WRAM_ram_1port_2010_wx3dkoi.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/tools/intel/ip/altera/megafunctions/ram_1port/ram_1_port_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="WRAM" as="ram_1port_0" />
+  <messages>
+   <message level="Info" culprit="WRAM">"Generating: WRAM_ram_1port_2010_wx3dkoi"</message>
+  </messages>
+ </entity>
+</deploy>

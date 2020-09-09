@@ -1,0 +1,93 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 240 224)
+	(text "WRAM" (rect 99 -1 134 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 208 20 220)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "data[287..0]" (rect 0 0 46 12)(font "Arial" (font_size 8)))
+		(text "data[287..0]" (rect 4 61 76 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 80 72)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "address[3..0]" (rect 0 0 51 12)(font "Arial" (font_size 8)))
+		(text "address[3..0]" (rect 4 101 82 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 80 112)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "wren" (rect 0 0 18 12)(font "Arial" (font_size 8)))
+		(text "wren" (rect 4 141 28 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 80 152)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "clock" (rect 0 0 20 12)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 181 34 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 80 192)(line_width 1))
+	)
+	(port
+		(pt 240 72)
+		(output)
+		(text "q[287..0]" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "q[287..0]" (rect 196 61 250 72)(font "Arial" (font_size 8)))
+		(line (pt 240 72)(pt 160 72)(line_width 3))
+	)
+	(drawing
+		(text "data" (rect 56 43 136 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "datain" (rect 85 67 206 144)(font "Arial" (color 0 0 0)))
+		(text "q" (rect 161 43 328 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "dataout" (rect 126 67 294 144)(font "Arial" (color 0 0 0)))
+		(text "address" (rect 34 83 110 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 85 107 212 224)(font "Arial" (color 0 0 0)))
+		(text "wren" (rect 52 123 128 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "wren" (rect 85 147 194 304)(font "Arial" (color 0 0 0)))
+		(text "clock" (rect 52 163 134 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 85 187 188 384)(font "Arial" (color 0 0 0)))
+		(text " WRAM " (rect 203 208 442 426)(font "Arial" ))
+		(line (pt 80 32)(pt 160 32)(line_width 1))
+		(line (pt 160 32)(pt 160 208)(line_width 1))
+		(line (pt 80 208)(pt 160 208)(line_width 1))
+		(line (pt 80 32)(pt 80 208)(line_width 1))
+		(line (pt 81 52)(pt 81 76)(line_width 1))
+		(line (pt 82 52)(pt 82 76)(line_width 1))
+		(line (pt 159 52)(pt 159 76)(line_width 1))
+		(line (pt 158 52)(pt 158 76)(line_width 1))
+		(line (pt 81 92)(pt 81 116)(line_width 1))
+		(line (pt 82 92)(pt 82 116)(line_width 1))
+		(line (pt 81 132)(pt 81 156)(line_width 1))
+		(line (pt 82 132)(pt 82 156)(line_width 1))
+		(line (pt 81 172)(pt 81 196)(line_width 1))
+		(line (pt 82 172)(pt 82 196)(line_width 1))
+		(line (pt 0 0)(pt 240 0)(line_width 1))
+		(line (pt 240 0)(pt 240 224)(line_width 1))
+		(line (pt 0 224)(pt 240 224)(line_width 1))
+		(line (pt 0 0)(pt 0 224)(line_width 1))
+	)
+)
